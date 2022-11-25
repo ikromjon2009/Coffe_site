@@ -5,9 +5,8 @@
   margin-top: 56px;
   color: white;
   background-color: rgba(14, 135, 132, 1);
-  
+  transition: 0.3s ease;
   &:hover {
     background-color: rgba(102, 210, 207, 1);
-  
   }
 }

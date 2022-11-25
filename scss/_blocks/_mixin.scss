@@ -6,14 +6,14 @@
 }
 
 @mixin title {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 72px;
   line-height: 72px;
   max-width: 493px;
 }
 
 @mixin title-2 {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   max-width: 445px;
@@ -21,13 +21,41 @@
 }
 
 @mixin our {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 24px;
   line-height: 32px;
 }
 
 @mixin our-2 {
-  font-weight: 400px;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 26px;
+}
+
+@mixin why {
+  font-weight: 900;
+  font-style: 40px;
+  line-height: 26px;
+}
+
+@mixin why-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 540px;
+  color: rgba(254, 252, 247, 1);
+}
+
+@mixin why_box {
+  font-weight: 900;
+  font-style: 24px;
+  line-height: 32px;
+  color: rgba(254, 252, 247, 1);
+}
+
+@mixin why_box-2 {
+  color: rgba(254, 252, 247, 1);
+  font-weight: 400;
   font-style: 16px;
   line-height: 26px;
 }

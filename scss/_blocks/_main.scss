@@ -26,13 +26,66 @@
 
 .our {
   background-image: url(../../img/Our.png);
+  position: absolute;
+  background-repeat: no-repeat;
   width: 1111px;
-  height: 196px;
+
   margin-top: 95px;
-  gap: 30px
+
+  gap: 30px;
+  &-1 {
+    padding-top: 40px;
+  }
 }
 
 .our-img-1 {
   @include our;
   @include our-2;
+}
+
+.why {
+  width: 1280px;
+  height: 577px;
+  background-color: rgba(44, 52, 62, 1);
+  padding-top: 100px;
+  position: absolute;
+  bottom: -250%;
+}
+
+.why_texts {
+  color: white;
+  text-align: center;
+
+  h2 {
+    @include why;
+  }
+
+  p {
+    display: inline-block;
+    text-align: center;
+    @include why-2;
+  }
+}
+
+.why_imgs {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.why_box {
+  text-align: center;
+  width: 350px;
+  height: 382px;
+  background-color: rgba(14, 135, 132, 1);
+  border-radius: 8px;
+  flex-wrap: nowrap;
+
+  h2 {
+    @include why_box;
+  }
+
+  p {
+    @include why_box-2;
+  }
 }

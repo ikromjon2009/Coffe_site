@@ -1,10 +1,11 @@
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 body {
   font-family: "Barlow", sans-serif;
+  position: relative;
 }
 
 *,
@@ -14,11 +15,12 @@ body {
 }
 
 .header-inner {
+  z-index: 2;
   display: flex;
   position: fixed;
   background-color: white;
   top: 0;
-  width: 1200px;
+  width: 1280px;
   align-items: center;
   justify-content: space-between;
 }
@@ -56,14 +58,14 @@ body {
 }
 
 .coffee h2 {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 72px;
   line-height: 72px;
   max-width: 493px;
 }
 
 .coffee p {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   max-width: 445px;
@@ -80,17 +82,76 @@ body {
 
 .our {
   background-image: url(../../img/Our.png);
+  position: absolute;
+  background-repeat: no-repeat;
   width: 1111px;
-  height: 196px;
   margin-top: 95px;
   gap: 30px;
 }
+.our-1 {
+  padding-top: 40px;
+}
 
 .our-img-1 {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 400px;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 26px;
+}
+
+.why {
+  width: 1280px;
+  height: 577px;
+  background-color: rgb(44, 52, 62);
+  padding-top: 100px;
+  position: absolute;
+  bottom: -250%;
+}
+
+.why_texts {
+  color: white;
+  text-align: center;
+}
+.why_texts h2 {
+  font-weight: 900;
+  font-style: 40px;
+  line-height: 26px;
+}
+.why_texts p {
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 540px;
+  color: rgb(254, 252, 247);
+}
+
+.why_imgs {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.why_box {
+  text-align: center;
+  width: 350px;
+  height: 382px;
+  background-color: rgb(14, 135, 132);
+  border-radius: 8px;
+  flex-wrap: nowrap;
+}
+.why_box h2 {
+  font-weight: 900;
+  font-style: 24px;
+  line-height: 32px;
+  color: rgb(254, 252, 247);
+}
+.why_box p {
+  color: rgb(254, 252, 247);
+  font-weight: 400;
   font-style: 16px;
   line-height: 26px;
 }
@@ -102,6 +163,7 @@ body {
   margin-top: 56px;
   color: white;
   background-color: rgb(14, 135, 132);
+  transition: 0.3s ease;
 }
 .btn-primery:hover {
   background-color: rgb(102, 210, 207);
