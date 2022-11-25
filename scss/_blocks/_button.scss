@@ -1,0 +1,13 @@
+.btn-primery {
+  width: 217px;
+  height: 56px;
+  border-radius: 6px;
+  margin-top: 56px;
+  color: white;
+  background-color: rgba(14, 135, 132, 1);
+  
+  &:hover {
+    background-color: rgba(102, 210, 207, 1);
+  
+  }
+}

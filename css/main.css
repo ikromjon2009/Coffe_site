@@ -1,0 +1,108 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.header-inner {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-inner-link ul {
+  display: flex;
+  gap: 32px;
+}
+
+.header-inner-link li {
+  list-style: none;
+}
+
+.header-inner-link a {
+  color: rgb(131, 136, 143);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.92px;
+  cursor: pointer;
+}
+.header-inner-link a:hover {
+  color: rgb(51, 61, 75);
+}
+
+.coffee {
+  margin-top: 100px;
+  background-image: url(../../img/coffee.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 600px;
+  color: white;
+  padding: 46px;
+}
+
+.coffee h2 {
+  font-weight: 900px;
+  font-size: 72px;
+  line-height: 72px;
+  max-width: 493px;
+}
+
+.coffee p {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 445px;
+  color: rgb(254, 252, 247);
+}
+
+.our-1 {
+  display: flex;
+  text-align: center;
+  margin-top: 55px;
+  gap: 30px;
+  text-align: center;
+}
+
+.our {
+  background-image: url(../../img/Our.png);
+  width: 1111px;
+  height: 196px;
+  margin-top: 95px;
+  gap: 30px;
+}
+
+.our-img-1 {
+  font-weight: 900px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400px;
+  font-style: 16px;
+  line-height: 26px;
+}
+
+.btn-primery {
+  width: 217px;
+  height: 56px;
+  border-radius: 6px;
+  margin-top: 56px;
+  color: white;
+  background-color: rgb(14, 135, 132);
+}
+.btn-primery:hover {
+  background-color: rgb(102, 210, 207);
+}/*# sourceMappingURL=main.css.map */
