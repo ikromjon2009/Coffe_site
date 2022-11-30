@@ -5,7 +5,6 @@
 
 body {
   font-family: "Barlow", sans-serif;
-  position: relative;
 }
 
 *,
@@ -85,10 +84,13 @@ body {
   position: absolute;
   background-repeat: no-repeat;
   width: 1111px;
+  height: 196px;
   margin-top: 95px;
+  top: 600px;
   gap: 30px;
 }
 .our-1 {
+  position: relative;
   padding-top: 40px;
 }
 
@@ -106,11 +108,14 @@ body {
   height: 577px;
   background-color: rgb(44, 52, 62);
   padding-top: 100px;
-  position: absolute;
-  bottom: -250%;
+}
+
+.our_box {
+  position: relative;
 }
 
 .why_texts {
+  position: relative;
   color: white;
   text-align: center;
 }
@@ -142,6 +147,7 @@ body {
   background-color: rgb(14, 135, 132);
   border-radius: 8px;
   flex-wrap: nowrap;
+  padding: 56px;
 }
 .why_box h2 {
   font-weight: 900;
@@ -156,10 +162,65 @@ body {
   line-height: 26px;
 }
 
+.how {
+  margin-top: 200px;
+  margin-left: 85px;
+}
+.how h2 {
+  color: rgb(131, 136, 143);
+}
+
+.chiziq {
+  width: 364px;
+  height: 1px;
+  background-color: rgb(253, 214, 186);
+  display: inline-block;
+}
+
+.dumaloq {
+  width: 31px;
+  height: 31px;
+  border: 1px solid rgb(14, 135, 132);
+  border-radius: 50px;
+  display: inline-block;
+  color: rgb(14, 135, 132);
+  background-color: white;
+}
+
+.blue {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+}
+
+.pick {
+  margin-top: 67px;
+  margin-left: 85px;
+  display: flex;
+  gap: 125px;
+}
+.pick h2 {
+  max-width: 255px;
+  font-weight: 900;
+  font-style: 32px;
+  line-height: 36px;
+}
+.pick p {
+  max-width: 285px;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 26px;
+}
+
 .btn-primery {
   width: 217px;
   height: 56px;
   border-radius: 6px;
+  border: none;
   margin-top: 56px;
   color: white;
   background-color: rgb(14, 135, 132);
@@ -167,4 +228,25 @@ body {
 }
 .btn-primery:hover {
   background-color: rgb(102, 210, 207);
+}
+.btn-primery:active {
+  background-color: rgb(14, 135, 132);
+}
+
+.btn-primery-2 {
+  width: 217px;
+  height: 56px;
+  border-radius: 6px;
+  margin-left: 85px;
+  border: none;
+  margin-top: 56px;
+  color: white;
+  background-color: rgb(14, 135, 132);
+  transition: 0.3s ease;
+}
+.btn-primery-2:hover {
+  background-color: rgb(102, 210, 207);
+}
+.btn-primery-2:active {
+  background-color: rgb(14, 135, 132);
 }/*# sourceMappingURL=main.css.map */

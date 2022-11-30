@@ -29,11 +29,12 @@
   position: absolute;
   background-repeat: no-repeat;
   width: 1111px;
-
+  height: 196px;
   margin-top: 95px;
-
+  top: 600px;
   gap: 30px;
   &-1 {
+    position: relative;
     padding-top: 40px;
   }
 }
@@ -48,11 +49,13 @@
   height: 577px;
   background-color: rgba(44, 52, 62, 1);
   padding-top: 100px;
-  position: absolute;
-  bottom: -250%;
+}
+.our_box {
+  position: relative;
 }
 
 .why_texts {
+  position: relative;
   color: white;
   text-align: center;
 
@@ -80,6 +83,8 @@
   background-color: rgba(14, 135, 132, 1);
   border-radius: 8px;
   flex-wrap: nowrap;
+  padding: 56px;
+
 
   h2 {
     @include why_box;
@@ -87,5 +92,55 @@
 
   p {
     @include why_box-2;
+  }
+}
+
+.how {
+  h2 {
+    color: rgba(131, 136, 143, 1);
+  }
+  margin-top: 200px;
+  margin-left: 85px;
+}
+
+.chiziq {
+  width: 364px;
+  height: 1px;
+  background-color: rgba(253, 214, 186, 1);
+  display: inline-block;
+}
+
+.dumaloq {
+  width: 31px;
+  height: 31px;
+  border: 1px solid rgba(14, 135, 132, 1);
+
+  border-radius: 50px;
+  display: inline-block;
+  color: rgba(14, 135, 132, 1);
+  background-color: white;
+}
+.blue {
+  display: flex;
+
+  justify-content: space-between;
+}
+.circle {
+  display: flex;
+  align-items: center;
+}
+
+.pick {
+  margin-top: 67px;
+  margin-left: 85px;
+  display: flex;
+  gap: 125px;
+
+  h2 {
+    @include pick;
+  }
+
+  p {
+    @include pick-2;
   }
 }
