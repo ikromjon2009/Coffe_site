@@ -45,12 +45,15 @@ body {
 .header-inner-link a:hover {
   color: rgb(51, 61, 75);
 }
+.header-inner-link a:active {
+  color: aqua;
+}
 
 .coffee {
   margin-top: 100px;
   background-image: url(../../img/coffee.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
+  width: 1280px;
   height: 600px;
   color: white;
   padding: 46px;
@@ -249,4 +252,33 @@ body {
 }
 .btn-primery-2:active {
   background-color: rgb(14, 135, 132);
+}
+
+.footer {
+  margin-top: 216px;
+  align-items: center;
+  display: flex;
+  width: 1280px;
+  height: 120px;
+  background-color: rgb(44, 52, 62);
+  justify-content: space-between;
+  padding: 85px;
+}
+
+.footer_iner {
+  display: flex;
+  gap: 33px;
+}
+.footer_iner a {
+  text-decoration: none;
+  color: rgb(131, 136, 143);
+}
+.footer_iner li {
+  list-style: none;
+}
+.footer_iner a:hover {
+  color: white;
+}
+.footer_iner a:active {
+  color: blue;
 }/*# sourceMappingURL=main.css.map */

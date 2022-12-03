@@ -1,0 +1,32 @@
+.footer {
+  margin-top: 216px;
+  align-items: center;
+  display: flex;
+  width: 1280px;
+  height: 120px;
+  background-color: rgba(44, 52, 62, 1);
+  justify-content: space-between;
+  padding: 85px;
+}
+
+.footer_iner {
+  display: flex;
+  gap: 33px;
+
+  a {
+    text-decoration: none;
+    color: rgba(131, 136, 143, 1);
+  }
+  li {
+    list-style: none;
+  }
+
+ a {
+  &:hover {
+    color: white;
+  }
+  &:active {
+    color: blue;
+  }
+ }
+}
