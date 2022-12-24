@@ -20,6 +20,18 @@
   color: rgba(254, 252, 247, 1);
 }
 
+@mixin title-3 {
+  max-width: 279px;
+  font-weight: 900;
+  font-style: 40px;
+  line-height: 40px;
+  font-family: Fraunces;
+}
+
+@mixin title-4 {
+  max-width: 279px;
+}
+
 @mixin our {
   font-weight: 900;
   font-size: 24px;
@@ -72,4 +84,8 @@
   font-weight: 400;
   font-style: 16px;
   line-height: 26px;
+}
+
+@mixin gran {
+  max-width: 540px; 
 }

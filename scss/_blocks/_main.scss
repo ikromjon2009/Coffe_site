@@ -1,19 +1,67 @@
 .coffee {
-  margin-top: 100px;
   background-image: url(../../img/coffee.jpg);
   background-repeat: no-repeat;
   width: 1280px;
   height: 600px;
   color: white;
   padding: 46px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $desktop) {
+    background-position: center;
+    width: 689px;
+    height: 500px;
+
+    h2 {
+      margin-top: 104px;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
+    a {
+      margin-top: 0;
+      display: inline-block;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    width: 327px;
+    height: 500px;
+    padding: 100px 24px;
+    margin-top: 80px;
+    background-position: bottom center;
+  }
 }
 
 .coffee h2 {
   @include title;
+  @media (max-width: $desktop) {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+    max-width: 329px;
+    font-family: Fraunces;
+  }
+
+  @media (max-width: $tablet) {
+    @include title-3;
+    margin-top: 0;
+  }
 }
 
 .coffee p {
   @include title-2;
+
+  @media (max-width: $tablet) {
+    @include title-4;
+    margin-right: 0;
+    display: inline-block;
+  }
 }
 
 .our-1 {
@@ -22,6 +70,9 @@
   margin-top: 55px;
   gap: 30px;
   text-align: center;
+  @media (max-width: $desktop) {
+    flex-direction: column;
+  }
 }
 
 .our {
@@ -30,18 +81,34 @@
   background-repeat: no-repeat;
   width: 1111px;
   height: 196px;
-  margin-top: 95px;
-  top: 600px;
-  gap: 30px;
+  margin-top: -35px;
+  // top: 600px;
+  // gap: 30px;
   &-1 {
     position: relative;
     padding-top: 40px;
   }
+  @media (max-width: $desktop) {
+    width: 689px;
+    height: 180px;
+  }
+}
+
+.our_h2_text {
+  margin-top: 49px;
 }
 
 .our-img-1 {
+  flex-direction: column;
+  display: flex;
+
+  @media (max-width: $desktop) {
+    flex-direction: row;
+  }
+
   @include our;
   @include our-2;
+  // display: flex;
 }
 
 .why {
@@ -49,6 +116,13 @@
   height: 577px;
   background-color: rgba(44, 52, 62, 1);
   padding-top: 100px;
+  margin-top: 118px;
+  @media (max-width: $desktop) {
+    width: 688px;
+    height: 863px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .our_box {
   position: relative;
@@ -67,6 +141,7 @@
     display: inline-block;
     text-align: center;
     @include why-2;
+    @include gran;
   }
 }
 
@@ -74,17 +149,38 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+
+  @media (max-width: $desktop) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
 }
 
 .why_box {
   text-align: center;
   width: 350px;
   height: 382px;
-  background-color: rgba(14, 135, 132, 1);
   border-radius: 8px;
   flex-wrap: nowrap;
   padding: 56px;
+  background-color: $green;
+  margin-top: 36px;
 
+  @media (max-width: $desktop) {
+    width: 573px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+  }
+
+  .why_box_text {
+    @media (max-width: $desktop) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   h2 {
     @include why_box;
@@ -99,7 +195,7 @@
   h2 {
     color: rgba(131, 136, 143, 1);
   }
-  margin-top: 200px;
+  margin-top: 250px;
   margin-left: 85px;
 }
 
@@ -108,6 +204,10 @@
   height: 1px;
   background-color: rgba(253, 214, 186, 1);
   display: inline-block;
+  @media (max-width: $desktop) {
+    width: 233px;
+    height: 1px;
+  }
 }
 
 .dumaloq {
@@ -119,6 +219,9 @@
   display: inline-block;
   color: rgba(14, 135, 132, 1);
   background-color: white;
+  @media (max-width: $desktop) {
+    border-radius: 50%;
+  }
 }
 .blue {
   display: flex;
@@ -142,5 +245,17 @@
 
   p {
     @include pick-2;
+  }
+}
+
+@media (max-width: $tablet) {
+  .our_text p {
+    max-width: 227px;
+  }
+}
+
+@media (max-width: $desktop) {
+  .our_text p {
+    max-width: 420px;
   }
 }

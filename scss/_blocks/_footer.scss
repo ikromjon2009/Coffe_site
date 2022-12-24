@@ -2,11 +2,17 @@
   margin-top: 216px;
   align-items: center;
   display: flex;
-  width: 1280px;
-  height: 120px;
-  background-color: rgba(44, 52, 62, 1);
+  background-color: $black;
   justify-content: space-between;
-  padding: 85px;
+  padding: 45px;
+
+  @media (max-width: $desktop) {
+    width: 688px;
+    height: 270px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 160px;
+  }
 }
 
 .footer_iner {
@@ -21,12 +27,12 @@
     list-style: none;
   }
 
- a {
-  &:hover {
-    color: white;
+  a {
+    &:hover {
+      color: white;
+    }
+    &:active {
+      color: blue;
+    }
   }
-  &:active {
-    color: blue;
-  }
- }
 }
